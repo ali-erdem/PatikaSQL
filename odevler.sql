@@ -15,3 +15,13 @@ select country from country where country like 'A%a';
 select country from country where country like '%_____n';
 select title  from film where title ilike '%t%t%t%t%';
 select * from film where title like 'C%' and length > 90 and rental_rate = 2.99;
+
+--Dördüncü Ödev
+select distinct replacement_cost from film;
+select count (distinct replacement_cost) from film;
+select count (distinct replacement_cost) from film where title like 'T%' and rating = 'G';
+select count(*) from country where LENGTH(country) = 5;
+select count(city) from city where city like 'R%'and city like '%r';
+
+
+
