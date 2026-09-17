@@ -23,5 +23,11 @@ select count (distinct replacement_cost) from film where title like 'T%' and rat
 select count(*) from country where LENGTH(country) = 5;
 select count(city) from city where city like 'R%'and city like '%r';
 
+--Beşinci Ödev
+select title from film where  title like  '%n' ORDER BY length DESC limit 5;
+select title from film where  title like  '%n' ORDER BY length asc OFFSET 5 limit 5;
+select last_name from customer where store_id = 1 ORDER BY store_id desc limit 4;
+
+--Altıncı Ödev
 
 
