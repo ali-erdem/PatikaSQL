@@ -29,5 +29,10 @@ select title from film where  title like  '%n' ORDER BY length asc OFFSET 5 limi
 select last_name from customer where store_id = 1 ORDER BY store_id desc limit 4;
 
 --Altıncı Ödev
+select AVG(rental_rate)from film;
+select count(film) from film where title like 'C%';
+select film.length from film where rental_rate = 0.99 order by length desc limit 1;
+select distinct(replacement_cost)from film where length > 150;
 
+--Yedinci Ödev
 
