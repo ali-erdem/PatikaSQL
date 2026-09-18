@@ -35,4 +35,9 @@ select film.length from film where rental_rate = 0.99 order by length desc limit
 select distinct(replacement_cost)from film where length > 150;
 
 --Yedinci Ödev
+select rental_rate from film group by rental_rate;
+select replacement_cost, count(*) as film_sayisi from film group by replacement_cost having count(*) > 50 order by film_sayisi desc;
+select country_id, count(*) as sehir_sayisi from city group by country_id order by sehir_sayisi desc limit 1;
+
+--Sekizinci Ödev
 
